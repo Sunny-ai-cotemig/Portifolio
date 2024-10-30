@@ -1,0 +1,863 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Cairo';
+    padding: 0;
+}
+
+body{
+    background-color: #242424;
+}
+
+header{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.3vh;
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 100%;
+    gap: 5%;
+}
+
+#inicio{
+    display: flex;
+    gap: 10vh;
+    list-style: none;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+#Curiculo{
+    margin-left: 40px;
+}
+
+.navega a{
+    transition: 0.6s ease-in-out;
+}
+
+.navega a:hover{
+    font-size: 30px;
+    color: #ff0000;
+}
+
+#botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    background-color: #353535;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: #888888;
+    border-radius: 100px;
+    margin: 2.7px;
+    width: 45px;
+    height: 45px;
+}
+
+input:checked + .button{
+    background-color: #ffffff;
+}
+
+input:checked + .button::before{
+    transform: translateX(50px);
+}
+
+#botao input{
+    display: none;
+}
+
+#primeira-parte{
+    display: flex;
+    height: 70vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#Primeira-area{
+    width: 30%;
+}
+
+.verme{
+    color: #FF0000;
+    font-family: 'Playfair Display';
+}
+
+#Segunda-area{
+    width: 35%;
+}
+
+.bemvind{
+    color: white;
+    font-family: 'Playfair Display';
+}
+
+.discr{
+    color: white;
+    line-height: 1.5;
+    font-size: 24px;
+    font-family: 'Raleway';
+}
+
+.svg{
+    width: 100%;
+}
+
+#segunda-parte{
+    display: flex;
+    height: 85vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+#terceira-area{
+    width: 35%;
+}
+
+#quarta-area{
+    width: 30%;
+}
+
+#habilidades{
+    margin-top: 6vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#habi{
+    position: relative;
+    font-size: 45px;
+    color: #FF0000;
+    font-family:'Playfair Display';
+}
+    
+#habi::after{content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    height: 0.6vh;
+    width: 100%;
+    background: #ffffffec;
+    content: "";
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+#quadra-lingua{
+    margin-top: 35px;
+    padding: 16px 28px;
+    background-color: rgba(195, 195, 195, 0.25);
+    border: solid 4px #FF0000;
+    font-size: 24px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    width: 20%;
+    color: #FF0000;
+    text-align: center;
+    font-family: 'Raleway';
+}
+/*Habilidades de linguas de programação*/
+#lingua{
+    margin: 145px;
+    display: grid;
+    grid-template-columns: 8fr 8fr 8fr;
+    grid-template-rows: 10vh 10vh;
+    gap: 90px;
+    align-items: center;
+}
+
+.programa{
+    padding: 16px 28px;
+    background-color: #393939;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    width: 100%;
+    color: #FF0000;
+    text-align: center;
+    box-shadow: 12px 12px 6px #4B0000;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.programa{
+    transition: 0.4s ease-in-out;
+}
+
+.programa:hover{
+    font-size: 30px;
+    border: solid 4px white;
+}
+
+#curs{
+    margin-top: 35px;
+    padding: 16px 15px;
+    background-color: rgba(195, 195, 195, 0.25);
+    border: solid 4px #FF0000;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    width: 20%;
+    color: #FF0000;
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+#cursos-ver{
+    /* text-align: left;
+    align-items: start;
+    margin: 25px;
+    background-color: rgba(88, 35, 35, 0.75);
+    width: 60%;
+    height: 50vh;
+    padding-left: 36px; */
+
+    text-align: left;
+    margin: 25px;
+    background-color: rgba(88, 35, 35, 0.75);
+    width: 60%;
+    height: 50vh;
+    /* padding-left: 36px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+
+.cursinho{
+    padding-top: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Lato';
+    text-align: center;
+}
+
+.img-curso{
+    padding-top: 10px;
+    width: 50%;
+    /* width: 150px; */
+    /* height: 150px; */
+}
+
+/*Projetos*/
+#proje {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projeto{
+    margin-top: 6vh;
+}
+#projeto{
+    position: relative;
+    font-size: 45px;
+    color: #FF0000;
+}
+    
+#projeto::after{content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    height: 0.6vh;
+    width: 100%;
+    background: #ffffffec;
+    content: "";
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.project-grid {
+    margin-top: 7vh;
+    display: block;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 24vh 24vh;
+    gap: 150px; /* Espaçamento entre os projetos */
+}
+
+.project {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #565656;
+    transition: transform 0.2s; /* Animação suave ao passar o mouse */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.project-image {
+    width: 100%; /* Imagem ocupa 100% da largura do projeto */
+    height: 16vh; /* Mantém a proporção da imagem */
+    border-radius: 4px; /* Bordas arredondadas para a imagem */
+}
+
+img{
+    width: 80px;
+}
+
+.fonte{
+    font-family: 'Lato';
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.fonte2{
+    font-family: 'Lato';
+    color: #ffffff;
+    font-weight: 400;
+}
+
+/*Contatos*/
+
+#cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+#contat{
+    margin-top: 6vh;
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+
+#contat{
+    position: relative;
+    font-size: 45px;
+    color: #ffffff;
+    font-family: 'Lato';
+}
+    
+#contat::after{content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    height: 0.6vh;
+    width: 100%;
+    background: #a000009d;
+    content: "";
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+/*Meus contatos*/
+
+#contatos{
+    margin-top: 2vh;
+    height: 25vh;
+    width: 50%;
+    padding: 5%;
+}
+
+.conta{
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/*barra*/
+
+#barra{
+    width: 60%;
+    height: 5vh;
+    background-color: rgba(104, 47, 47, 0.4);
+}
+
+#barra p{
+    text-align: center;
+    padding-top: 1.5vh;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: #ffffff;
+}
+
+
+.lightmode{
+    color: #000;
+    background-color: rgb(235, 235, 235);
+}
+
+.lightmode .discr { color: black;}
+
+.lightmode .bemvind { color: black;}
+
+.lightmode #habi::after { content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    height: 0.6vh;
+    width: 100%;
+    background: #000000ec;
+    content: "";
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;}
+
+.lightmode #cursos-ver{
+    text-align: left;
+    align-items: start;
+    margin: 25px;
+    background-color: rgba(0, 0, 0, 0.822);
+    width: 60%;
+    height: 50vh;
+    padding-left: 36px;
+}
+
+.lightmode #projeto::after{content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    height: 0.6vh;
+    width: 100%;
+    background: #000000ec;
+    content: "";
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.lightmode .project {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #292929;
+    transition: transform 0.2s; /* Animação suave ao passar o mouse */
+}
+
+.lightmode #contat{
+    position: relative;
+    font-size: 45px;
+    color: #000000;
+    font-family: 'Lato';
+}
+
+.lightmode .conta{
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #020202;
+}
+
+.lightmode #barra{
+    width: 60%;
+    height: 5vh;
+    background-color: rgba(15, 7, 7, 0.774);
+}
+
+.lightmode .programa:hover{
+    font-size: 30px;
+    border: solid 4px rgb(31, 31, 31);
+}
+
+.text-anim:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+
+
+.navega a{
+    text-decoration: none;
+    color: white;
+}
+
+#divTeste{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+@media (max-width:960px){
+    
+    header{
+        background-color: rgb(85, 1, 1);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 22%;
+        position: sticky;
+        top: 0;
+        padding: 0;
+        margin: 0;
+    }
+    #primeira-parte{
+        flex-direction: column;
+        
+        
+    }
+    .bemvind{
+        font-size: 25px;
+    }
+    .discr{
+        font-size: 15px;
+    }
+    #segunda-parte{
+        flex-direction: column-reverse;
+        height: 100vh;
+
+    }
+
+    #inicio{
+        opacity: 1;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .navega a:hover{
+        font-size: 30px;
+        color: #000000;
+    }
+
+    .button{
+        background-color: #353535;
+        width: 50px;
+        height: 25px;
+        border-radius: 100px;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .button::before{
+        position: absolute;
+        content: '';
+        background-color: #888888;
+        border-radius: 100px;
+        margin: 1.7px;
+        width: 20px;
+        height: 20px;
+    }
+    input:checked + .button{
+        background-color: #ffffff;
+    }
+    
+    input:checked + .button::before{
+        transform: translateX(25px);
+    }
+    
+    #botao input{
+        display: none;
+    }
+    .lightmode #barra{ 
+        background-color: transparent;
+    }
+
+    #proje{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #projeto{
+        margin-top: 6vh;
+    }
+    #projeto{
+        position: relative;
+        font-size: 45px;
+        color: #FF0000;
+    }
+        
+    #projeto::after{content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        right: 0;
+        height: 0.6vh;
+        width: 100%;
+        background: #ffffffec;
+        content: "";
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+    }
+    
+    .project-grid {
+        margin-top: 2,5vh;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 25px; /* Espaçamento entre os projetos */
+    }
+    
+    .project {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 5px;
+        text-align: center;
+        background-color: #565656;
+        transition: transform 0.2s; /* Animação suave ao passar o mouse */
+    }
+    
+    .project:hover {
+        transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    }
+    
+    .project-image {
+        width: 80%; /* Imagem ocupa 100% da largura do projeto */
+        height: 10vh; /* Mantém a proporção da imagem */
+        border-radius: 4px; /* Bordas arredondadas para a imagem */
+    }
+    
+    img{
+        width: 80px;
+    }
+    #contat{
+        margin-top: 1vh;
+        text-align: center;
+        font-family: 'Playfair Display';
+    }
+    
+    #contat{
+        position: relative;
+        font-size: 25px;
+        color: #ffffff;
+        font-family: 'Lato';
+    }
+        
+    #contat::after{content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        right: 0;
+        height: 0.6vh;
+        width: 100%;
+        background: #a000009d;
+        content: "";
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+    }
+    
+    /*Meus contatos*/
+    
+    #contatos{
+        margin-top: 2vh;
+        height: 5vh;
+        width: 25%;
+        padding: 2.5%;
+        margin-bottom: 7vh;
+    }
+    
+    .conta{
+        font-size: 10px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    #barra{
+        width: 50%;
+        height: 5vh;
+        background-color: rgba(104, 47, 47, 0.4);
+    }
+    
+    #barra p{
+        text-align: center;
+        padding-top: 1.5vh;
+        font-family: 'Lato';
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+    #habi{
+        position: relative;
+        font-size: 26px;
+        color: #FF0000;
+        font-family:'Playfair Display';
+    }
+        
+    #habi::after{content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        right: 0;
+        height: 0.2vh;
+        width: 100%;
+        background: #ffffffec;
+        content: "";
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+    }
+    
+    #quadra-lingua{
+        margin-top: 35px;
+        padding: 16px px;
+        background-color: rgba(195, 195, 195, 0.25);
+        border: solid 2px #FF0000;
+        font-size: 14px;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        width: 35%;
+        color: #FF0000;
+        text-align: center;
+        font-family: 'Raleway';
+    }
+    /*Habilidades de linguas de programação*/
+    #lingua{
+        margin: 145px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .programa{
+        padding: 16px 28px;
+        background-color: #393939;
+        font-size: 15px;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        width: 100%;
+        color: #FF0000;
+        text-align: center;
+        box-shadow: 12px 12px 6px #4B0000;
+        font-family: 'Lato';
+        font-weight: 400;
+    }
+    
+    .programa{
+        transition: 0.4s ease-in-out;
+    }
+    
+    .programa:hover{
+        font-size: 20px;
+        border: solid 4px white;
+    }
+
+    #curs{
+        margin-top: 35px;
+        padding: 16px 15px;
+        background-color: rgba(195, 195, 195, 0.25);
+        border: solid 4px #FF0000;
+        font-size: 15px;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        width: 30%;
+        color: #FF0000;
+        text-align: center;
+        font-family: 'Raleway';
+    }
+    
+    #cursos-ver{
+        text-align: left;
+        align-items: start;
+        margin: 30px;
+        background-color: rgba(88, 35, 35, 0.75);
+        width: 65%;
+        height: 50vh;
+        padding-left: 36px;
+        
+    }
+    
+    .cursinho{
+        padding-top: 25px;
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        font-family: 'Lato';
+    }
+    
+    .img-curso{
+        padding-top: 10px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width:960px){
+    #divTeste{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+        align-content: center;
+    }
+
+}
+@media (max-width:412px){
+    #contatos
+    {
+        margin-left: -45px;        
+    }
+
+    #contatos div
+    {
+        margin-bottom:  10px;
+    }
+
+    #numberPhone
+    {
+        width: 190px;
+    }
+}
+
+.cursos
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgPakcet
+{
+    width: 90%;
+}
