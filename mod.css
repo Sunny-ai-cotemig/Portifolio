@@ -322,8 +322,8 @@ input:checked + .button::before{
 
 .project-image {
     width: 100%; /* Imagem ocupa 100% da largura do projeto */
-    height: 16vh; /* Mantém a proporção da imagem */
-    border-radius: 4px; /* Bordas arredondadas para a imagem */
+    height: 14vh;/* Mantém a proporção da imagem */
+    border-radius: 2vh; /* Bordas arredondadas para a imagem */
 }
 
 img{
@@ -349,7 +349,7 @@ img{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 50vh;
+    height: 90vh;
 }
 
 #contat{
@@ -816,11 +816,26 @@ img{
     
     /*Meus contatos*/
     
+    #cont{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #quadrado{
+        display: none;
+        margin-top: 1vh;
+        padding-top: 25px;
+        padding-left: 125px;
+        background-color: #242424;
+        padding-right: 75px;
+        margin-bottom: 10vh;
+    }
+
     #contatos{
         margin-top: 2vh;
         height: 5vh;
         padding: 2.5%;
-        margin-bottom: 7vh;
+        margin-bottom: 2vh;
     }
     
     .conta{
@@ -948,6 +963,50 @@ img{
         margin-bottom: 0px;
         margin-left: auto;
     }
+
+    .nomes{
+        display: none;
+        font-size: 14px;
+        color: #ffffff;
+        font-family: 'Gupter';
+        font-weight: 300;
+    }
+
+    #mens{
+        display: none;
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #ffffff;
+        font-family: 'Gupter';
+        font-weight: 300;
+    }
+
+    #areatexto{ 
+        display: none;
+        outline: none;
+        height: auto;
+        border: none;
+        border-bottom: 2px solid gray;
+        border-radius: 0;
+        background: none;
+        color: #fff;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        height: 5vh;
+    }
+    #quadrado input{
+        display: none;
+        outline: none;
+        border: 0;
+        border-bottom: 2px solid gray;
+        border-radius: 0;
+        background: none;
+        color: #fff;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width:960px){
@@ -978,6 +1037,81 @@ img{
     }
 }
 
+#imp_texto{
+    border-radius: 30px;
+    width: 125%;
+    height: 5vh;
+    border: #ffd903 solid 3px;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+}
+
+#conte{
+    padding-top: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#quadrado{
+    margin-top: 5vh;
+    padding-top: 25px;
+    padding-left: 125px;
+    width: 80%;
+    background-color: #242424;
+    height: 85vh;
+    padding-right: 75px;
+    margin-bottom: 10vh;
+}
+
+.nomes{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Gupter';
+    font-weight: 600;
+
+}
+
+#quadrado input{
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid gray;
+    border-radius: 0;
+    background: none;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+#mensagem{
+    margin-top: 30px;
+}
+
+#mens{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Gupter';
+    font-weight: 600;
+}
+
+#areatexto{
+    outline: none;
+    height: auto;
+    border: none;
+    border-bottom: 2px solid gray;
+    border-radius: 0;
+    background: none;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    height: 25vh;
+}
 .cursos
 {
     display: flex;
